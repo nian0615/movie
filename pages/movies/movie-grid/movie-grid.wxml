@@ -1,0 +1,18 @@
+<import src="../movie/movie-template.wxml"></import>
+<template name="movieGridTemplate">
+    <!-- <scroll-view class="moreGrid" scroll-y="true" scroll-x="false" onReachBottom="onScroll">
+        <block wx:for="{{movies}}" wx:for-item="movie">
+            <view class="gridTemp">
+                <template is="movieTemplate" data="{{...movie}}"></template>
+            </view>
+        </block>
+    </scroll-view> -->
+    <!-- 这是七月说的最新代码  但是这样的话 下拉加载还是无法实现 -->
+    <view class="moreGrid">
+        <block wx:for="{{movies}}" wx:for-item="movie">
+            <view class="gridTemp">
+                <template is="movieTemplate" data="{{...movie}}"></template>
+            </view>
+        </block>
+    </view>
+</template>

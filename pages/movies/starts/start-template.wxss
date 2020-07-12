@@ -1,0 +1,17 @@
+/* pages/movies/starts/start.wxss */
+.start-container {
+    display: flex;
+    flex-direction: row;
+}
+.starts {
+    display: flex;
+    flex-direction: row;
+    height: 17rpx;
+    margin-right: 24rpx;
+    margin-top: 6rpx;
+}
+.starts image {
+    width: 17rpx;
+    height: 17rpx;
+    padding-left: 3rpx;
+}

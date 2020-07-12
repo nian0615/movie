@@ -1,0 +1,21 @@
+<!-- pages/movies/starts/start.wxml -->
+<template name="startTemplate">
+    <view class="start-container">
+        <view class="starts">
+            <block wx:for="{{start}}" wx:for-item="i">
+                <image wx:if="{{i}}" src="/images/icon/star.png" />
+                <image wx:else src="/images/icon/none-star.png" />
+                <!-- 如果是半星   ['1','1','2','0','0'] -->
+                <!-- <image wx:if="{{i==1}}" src=""/>
+                <image wx:elif="{{i==2}}" src=""/>
+                <image wx:else src=""/> -->
+            </block>
+            <!-- <image src="/images/icon/star.png" />
+            <image src="/images/icon/star.png" />
+            <image src="/images/icon/star.png" />
+            <image src="/images/icon/star.png" />
+            <image src="/images/icon/star.png" /> -->
+        </view>
+        <text class="">{{num}}</text>
+    </view>
+</template>

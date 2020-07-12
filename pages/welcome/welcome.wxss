@@ -1,0 +1,58 @@
+/* pages/welcome/welcome.wxss */
+
+page {
+  height: 100%;
+  background-color: #b4d4db;
+}
+
+.contair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avatar {
+  margin-top: 160rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.user-name {
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.moto-container {
+  width: 200rpx;
+  height: 80rpx;
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.moto {
+  line-height: 80rpx;
+  font-size: 22rpx;
+  font-weight: 700;
+  color: #405f80;
+}
+/* --- */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  /* margin-top: 30%; */
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

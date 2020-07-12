@@ -1,0 +1,9 @@
+@import "../movie//movie-template.wxss";
+.moreGrid {
+  height: 1330rpx;
+  margin: 40rpx 0 40rpx 0;
+}
+.gridTemp {
+  float: left;
+  margin-bottom: 40rpx;
+}

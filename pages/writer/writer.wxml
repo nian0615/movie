@@ -1,0 +1,23 @@
+<!-- pages/writer/writer.wxml -->
+<!-- 模板引入 -->
+<import src="./writer-item/writer-item-template.wxml"></import>
+<view>
+    <swiper catchtap="onSwiperitem" indicator-dots="true" autoplay="true" circular="true">
+        <swiper-item>
+            <image class="" src="https://huixiong.oss-cn-beijing.aliyuncs.com/wgg/img (15).jpg" data-writerid="1" />
+        </swiper-item>
+        <swiper-item>
+            <image class="" src="https://huixiong.oss-cn-beijing.aliyuncs.com/wgg/img (7).jpg" data-writerid="2" />
+        </swiper-item>
+        <swiper-item>
+            <image class="" src="https://huixiong.oss-cn-beijing.aliyuncs.com/wgg/img (4).jpg" data-writerid="3" />
+        </swiper-item>
+    </swiper>
+    <block wx:for="{{post_key}}" wx:for-item="item" wx:for-index="index">
+        <!-- <block wx:for="{{post_content}}" wx:for-item="item"> -->
+        <view catch:tap="onWriterdetail" data-writerid="{{item.writerId}}">
+            <!-- ...item,是把数组打开，模板里就不用写item.music啊啥的 -->
+            <template is="writer-item" data="{{...item}}"></template>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,25 @@
+<!-- pages/movies/movies.wxml -->
+<import src="../movies/movie-list/movielistTemplate"></import>
+<import src="../movies/movie-grid/movie-grid.wxml"></import>
+<view class="container">
+   <view class="search">
+      <icon class="icon" type="search" size="23" color="#405f80"></icon>
+      <input type="text" placeholder="天气之子、你的名字" value="{{inputValue}}" placeholder-class="placeholder" bindfocus="onChangefocus" bindconfirm="onSend" />
+      <image wx:if="{{searchBannerShow}}" class="out" src="../../images/icon/xx.png" bindtap="oncancle" />
+   </view>
+   <view wx:if="{{conntainerShow}}">
+      <view class="movie-template">
+         <!-- ...展开就变成了movies的键值对 -->
+         <template is="movielistTemplate" data="{{...theaters}}"></template>
+      </view>
+      <view class="movie-template">
+         <template is="movielistTemplate" data="{{...coming_soon}}"></template>
+      </view>
+      <view class="movie-template">
+         <template is="movielistTemplate" data="{{...top}}"></template>
+      </view>
+   </view>
+</view>
+<view class="search-more" wx:if="{{searchBannerShow}}">
+   <template is="movieGridTemplate" data="{{...searchResult}}"></template>
+</view>

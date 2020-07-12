@@ -1,0 +1,17 @@
+<template name="writer-item">
+    <view class="writer-list">
+        <view class="writer-author">
+            <image class="author-image" src="{{img.authorImage}}" />
+            <text class="author-date">{{date}}</text>
+        </view>
+        <text class="writer-name">{{name}}</text>
+        <image class="writer-image" src="{{img.writerImage}}" />
+        <text class="writer-content">{{writerContent}}</text>
+        <view class="writer-like">
+            <image class="writer-like-image" src="../../images/icon/chat.png" />
+            <text class="writer-like-text">{{likeNum}}</text>
+            <image class="writer-like-image" src="../../images/icon/view.png" />
+            <text class="writer-like-text">{{lookNum}}</text>
+        </view>
+    </view>
+</template>

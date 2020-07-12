@@ -1,0 +1,17 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" style="margin-top: 50%;" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            获取头像昵称
+        </button>
+        <block wx:else>
+            <view style="margin-top:30%;">
+                <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            </view>
+        </block>
+        <view class="moto" wx:if="{{userInfo.avatarUrl}}">Hello  {{userInfo.nickName}}</view>
+        <view class="moto-container" bindtap="onTap">
+            <text class="moto">开启小程序之旅</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/writer/writer",
+    "pages/writer/writer-detail/writer-detail",
+    "pages/movies/movies",
+    "pages/movies/more-movies/more-movies",
+    "pages/movies/movies-detail/movies-detail"
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/writer/writer",
+        "text": "阅读",
+        "iconPath": "./images/tab/ciwei.png",
+        "selectedIconPath": "./images/tab/ciwei_hl.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "./images/tab/dianying.png",
+        "selectedIconPath": "./images/tab/dianying_hl.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

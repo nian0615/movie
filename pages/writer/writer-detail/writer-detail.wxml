@@ -1,0 +1,21 @@
+<!-- pages/writer/writer-detail/writer-detail.wxml -->
+<view class="contanier">
+    <image class="header-image" src="{{isPlayaudio?writerKey.music.imgSrc:writerKey.img.writerImage}}" />
+    <image class="audio"  catchtap="onMusic" src="{{isPlayaudio?'../../../images/music/music-stop.png':'../../../images/music/music-start.png'}}" />
+    <view class="author-date">
+        <image class="author-image" src="{{writerKey.img.authorImage}}" />
+        <text class="author-name">{{writerKey.author}}</text>
+        <text class="author-fa">发表于</text>
+        <text class="author-time">{{writerKey.time}}</text>
+    </view>
+    <text class="title">{{writerKey.name}}</text>
+    <view class="tool">
+        <view class="horizon"></view>
+        <view class="circle-img">
+            <image wx:if="{{conllection}}" catchtap="onColletionTap" src="../../../images/icon/collection.png" />
+            <image wx:else catchtap="onColletionTap" src="../../../images/icon/collection-anti.png" />
+            <image catchtap="onshare" class="tool-sha" src="../../../images/icon/share.png" />
+        </view>
+    </view>
+    <text class="content-text">{{writerKey.content}}</text>
+</view>

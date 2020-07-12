@@ -1,0 +1,118 @@
+.contanier {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-image {
+    width: 100%;
+    height: 460rpx;
+}
+
+
+/* 音乐播放 */
+
+.audio {
+    position: absolute;
+    width: 102rpx;
+    height: 110rpx;
+    left: 50%;
+    margin-left: -51rpx;
+    top: 180rpx;
+    opacity: 0.6;
+}
+
+
+/* 作者及时间 */
+
+.author-date {
+    flex-direction: row;
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+}
+
+.author-image {
+    height: 64rpx;
+    width: 64rpx;
+    vertical-align: middle;
+}
+
+.author-name {
+    font-size: 30rpx;
+    font-weight: 300;
+    margin-left: 20rpx;
+    vertical-align: middle;
+    color: #666;
+}
+
+.author-fa {
+    font-size: 24rpx;
+    color: #999;
+    margin-left: 20rpx;
+}
+
+.author-time {
+    font-size: 24rpx;
+    margin-left: 30rpx;
+    vertical-align: middle;
+    color: #999;
+}
+
+
+/* 标题 */
+
+.title {
+    margin-left: 40rpx;
+    font-size: 36rpx;
+    font-weight: 700;
+    margin-top: 30rpx;
+    letter-spacing: 2px;
+    color: #4b556c;
+}
+
+
+/* 收藏 */
+
+.tool {
+    margin-top: 20rpx;
+}
+
+.circle-img {
+    float: right;
+    margin-right: 40rpx;
+    vertical-align: middle;
+}
+
+.circle-img image {
+    width: 90rpx;
+    height: 90rpx;
+}
+
+.tool-sha {
+    margin-left: 30rpx;
+}
+
+
+/* 实线 */
+
+.horizon {
+    width: 660rpx;
+    height: 1px;
+    background-color: #e5e5e5;
+    vertical-align: middle;
+    position: relative;
+    top: 46rpx;
+    margin: 0 auto;
+    z-index: -99;
+}
+
+
+/* 正文 */
+
+.content-text {
+    color: #666;
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+    margin-right: 30rpx;
+    line-height: 44rpx;
+    letter-spacing: 2px;
+}

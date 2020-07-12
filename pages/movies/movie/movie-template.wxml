@@ -1,0 +1,11 @@
+<import src="../starts/start-template"></import>
+<template name="movieTemplate">
+    <view class="movie-container" catch:tap="onMovietap" data-movieId="{{movieId}}">
+        <image class="movie-img" src="{{imgUrl}}" />
+        <text class="movie-title">{{title}}</text>
+        <!-- 星星组件 -->
+        <!-- 只能传一个参数，所以就用js再次封装了一下 -->
+        <template is="startTemplate" data="{{start:starts,num:average}}"></template>
+        <!-- <template is="startTemplate" data="{{average}}"></template> -->
+    </view>
+</template>

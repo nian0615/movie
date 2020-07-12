@@ -1,0 +1,22 @@
+<import src="../movie/movie-template"></import>
+<template name="movielistTemplate">
+    <view class="movie-list-container">
+        <view class="inner-container">
+            <view class="movie-head">
+                <text class="slogan">{{cateTitle}}</text>
+                <view class="more" catch:tap="onMoreMovie" data-cateGory="{{cateTitle}}">
+                    <text class="more-text">更多</text>
+                    <image class="more-img" src="/images/icon/arrow-right.png" />
+                </view>
+            </view>
+            <view class="movies-container">
+                <!-- movies.js里面加了movies的键值对，所以这里不需要再次写下面的模板 -->
+                <block wx:for="{{movies}}" wx:for-item="movie">
+                    <template is="movieTemplate" data="{{...movie}}"></template>
+                </block>
+                <!-- <template is="movieTemplate"></template>
+                <template is="movieTemplate"></template> -->
+            </view>
+        </view>
+    </view>
+</template>
